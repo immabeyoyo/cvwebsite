@@ -1,0 +1,16 @@
+We maken een cv website waarin je een layout kan kiezen, je gegevens kan invoeren en dat hij dan je gegevens op de juist plek zet.
+
+We willen dat je het gemaakte cv kan printen naar een pdf bestand.
+
+Ook willen we dat je een account kan maken en dat daar je opgeslagen cv's staan.
+
+Wat moeten we hiervoor doen?
+1. Gegevens kunnen invoeren.
+2. Layouts maken.
+3. Layouts kunnen kiezen.
+4. Print naar pdf knopje dat het pdf file download
+5. Backend maken met account gegevens
+6. Account aanmaken
+7. Inloggen
+
+// als je nog meer hebt zet het er dan bij //
