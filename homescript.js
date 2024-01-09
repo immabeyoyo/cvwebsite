@@ -17,6 +17,10 @@ let volgendePaginaButton = document.createElement('button');
 volgendePaginaButton.textContent = 'Volgende pagina';
 volgendePaginaButton.addEventListener('click', loadIndexPagina);
 
+let advertentie = document.createElement('div');
+advertentie.id = 'advertentie'
+advertentie.innerHTML = 'Uw advertentie hier? <br> Dat kan! Neem nu Contact op.'
+
 // Append the button to the header
 document.body.appendChild(logo);
 header.appendChild(volgendePaginaButton);
@@ -24,3 +28,4 @@ header.appendChild(volgendePaginaButton);
 // Append the header to the body
 document.body.appendChild(homePaginaKop);
 document.body.appendChild(header);
+document.body.appendChild(advertentie);
