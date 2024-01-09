@@ -1,4 +1,29 @@
-// Maak form die vraagt naar je naam en email
+function createWerkgeverForm(event) {
+  // Voorkom browsers default form gedrag.
+  event.preventDefault();
+  // Maak nieuwe form
+  let werkgeverForm = document.createElement('form');
+
+  // Input voor werkgever
+  let inputWerkgever = document.createElement('input');
+  inputWerkgever.type = 'text';
+  inputWerkgever.name = 'werkgever';
+  inputWerkgever.placeholder = 'Vorige werkgever';
+
+  // Button voor nieuwe form
+  let buttonSubmit = document.createElement('input');
+  buttonSubmit.type = 'button';
+  buttonSubmit.value = 'Submit';
+
+  // Append elements voor nieuwe form
+  werkgeverForm.appendChild(inputWerkgever);
+  werkgeverForm.appendChild(buttonSubmit);
+
+  // Append nieuwe form to body
+  document.body.appendChild(werkgeverForm);
+}
+
+// Maak form die vraagt naar je gegevens.
 let form = document.createElement('form');
 
 // Maakt form inputs
@@ -21,29 +46,30 @@ inputEmail.name = 'Email';
 inputEmail.placeholder = 'Email';
 
 // Input van geboortedatum
+let labelGeboorteDatum = document.createElement('label');
+labelGeboorteDatum.textContent = 'Geboortedatum: ';
 let inputGeboorteDatum = document.createElement('input');
-inputGeboorteDatum.type = 'text';
+inputGeboorteDatum.type = 'date';
 inputGeboorteDatum.name = 'GeboorteDatum';
 inputGeboorteDatum.placeholder = 'Geboortedatum'
-
-// Input van vorige werkgever
-let inputWerkgever = document.createElement('input');
-inputWerkgever.type = 'text';
-inputWerkgever.name = 'Werkgever';
-inputWerkgever.placeholder = 'Vorige werkgever';
 
 // Button functie
 let buttonSubmit = document.createElement('input');
 buttonSubmit.type = 'submit';
-buttonSubmit.value = 'Submit';
+buttonSubmit.value = 'Voeg toe';
+
+// Button om nieuwe form te maken voor Werkgever
+let addWerkgeverButton = document.createElement('button');
+addWerkgeverButton.textContent = 'Voeg werkgever toe';
+addWerkgeverButton.addEventListener('click', createWerkgeverForm);
 
 // Voeg elementen toe aan de forms
 form.appendChild(inputNaam);
 form.appendChild(inputAchternaam);
 form.appendChild(inputEmail);
+form.appendChild(labelGeboorteDatum);
 form.appendChild(inputGeboorteDatum);
-form.appendChild(inputWerkgever);
+form.appendChild(addWerkgeverButton);
 form.appendChild(buttonSubmit);
 
-// Append form
 document.body.appendChild(form);
