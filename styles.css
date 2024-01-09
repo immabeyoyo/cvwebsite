@@ -1,6 +1,6 @@
 /* Dit is even om te testen of alles gekoppeld is*/
 body {
-  background-color: rgb(116, 116, 255);
+  background-color: rgba(116, 116, 255, 0.481);
 }
 
 #uitkomst {
