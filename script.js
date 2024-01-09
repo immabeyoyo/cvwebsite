@@ -1,3 +1,6 @@
+let gegevensKop = document.createElement('p');
+gegevensKop.innerHTML = 'Vul hier je gegevens in en klik daarna op de knop \'Voeg toe\'.'
+
 function createWerkgeverForm(event) {
   // Voorkom browsers default form gedrag.
   event.preventDefault();
@@ -72,4 +75,5 @@ form.appendChild(inputGeboorteDatum);
 form.appendChild(addWerkgeverButton);
 form.appendChild(buttonSubmit);
 
+document.body.appendChild(gegevensKop);
 document.body.appendChild(form);

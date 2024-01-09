@@ -19,7 +19,7 @@ volgendePaginaButton.addEventListener('click', loadIndexPagina);
 
 let advertentie = document.createElement('div');
 advertentie.id = 'advertentie'
-advertentie.innerHTML = 'Uw advertentie hier? <br> Dat kan! Neem nu Contact op.'
+advertentie.innerHTML = 'Uw advertentie hier? <br> Dat kan! Neem nu contact op. <br> michiel.vanwijk@student.vonknh.nl'
 
 // Append the button to the header
 document.body.appendChild(logo);
