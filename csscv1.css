@@ -1,0 +1,77 @@
+html{
+    margin: 0%;
+}
+body{
+    margin: 0px;
+}
+#a4{
+    width: 840px;
+    height: 1188px;
+    background-color: grey;
+}
+#picture{
+    border-radius: 200px;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    float:left;
+}
+#name{
+    float: right;
+    margin-top: 100px;
+    margin-right: 100px;
+    width: 400px;
+    height: 50px;
+    background-color: blue;
+}
+#header{
+    width: 100%;
+    height: 300px;
+}
+#bijlage3,#bijlage2,#bijlage1{
+    width: 300px;
+}
+#titel1,#titel2,#titel3{
+    height: 50px;
+    width: 300px;
+    background-color: yellow;
+    margin: 10px;
+}
+#text1,#text2,#text3{
+    height: 130px;
+    width: 300px;
+    background-color: orange;
+    margin: 10px;
+}
+#fotos1,#fotos2,#fotos3{
+    height: 77px;
+    width: 300px;
+    background-color: greenyellow   ;
+    margin: 10px;
+}
+#title4,#title5{
+    height: 50px;
+    width: 250px;
+    background-color: yellow;
+    float: right;
+    margin: 10px;
+    margin-right: 160px;
+}
+#Text4,#text5{
+    height: 150px;
+    width: 400px;
+    float: right;
+    background: orange;
+    margin: 10px;
+}
+.links{
+    float: left;
+}
+#ervaring1,#ervaring2,#ervaring3,#ervaring4,#ervaring5,#ervaring6{
+    height: 45px;
+    width: 400px;
+    margin: 10px;
+    float: right;
+    background-color: pink;
+}
