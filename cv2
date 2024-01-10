@@ -5,8 +5,13 @@
 
     </head>
     <body>
-        <div>`
-            
+        <div id="a4">
+            <div id="sidebar">`
+                <div id="picture">
+                </div>
+                <div id="name2">
+                </div>
+            </div>
         </div>
     </body>
 </html>

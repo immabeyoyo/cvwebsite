@@ -3,4 +3,14 @@ html{
 }
 body{
     margin: 0px;
+    background: grey;
+}
+#a4{
+    width: 840px;
+    height: 1188px;
+    margin: 400px;
+    background-color: white;
+}
+#sidebar{
+    width: 300px;
 }
