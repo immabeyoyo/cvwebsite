@@ -3,11 +3,13 @@ html{
 }
 body{
     margin: 0px;
+    background-color: grey;
 }
 #a4{
     width: 840px;
     height: 1188px;
-    background-color: grey;
+    margin: 400px;
+    background-color: white;
 }
 #picture{
     border-radius: 200px;
