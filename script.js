@@ -4,6 +4,7 @@ gegevensKop.innerHTML = 'Vul hier je gegevens in en klik daarna op de knop \'Voe
 function createWerkgeverForm(event) {
   // Voorkom browsers default form gedrag.
   event.preventDefault();
+  
   // Maak nieuwe form
   let werkgeverForm = document.createElement('form');
 
