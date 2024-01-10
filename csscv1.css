@@ -24,6 +24,7 @@ body{
     width: 400px;
     height: 50px;
     background-color: blue;
+    border-radius: 20px;
 }
 #header{
     width: 100%;
@@ -37,18 +38,21 @@ body{
     width: 300px;
     background-color: yellow;
     margin: 10px;
+    border-radius: 20px;
 }
 #text1,#text2,#text3{
     height: 130px;
     width: 300px;
     background-color: orange;
     margin: 10px;
+    border-radius: 20px;
 }
 #fotos1,#fotos2,#fotos3{
     height: 77px;
     width: 300px;
     background-color: greenyellow   ;
     margin: 10px;
+    border-radius: 20px;
 }
 #title4,#title5{
     height: 50px;
@@ -57,6 +61,7 @@ body{
     float: right;
     margin: 10px;
     margin-right: 160px;
+    border-radius: 20px;
 }
 #Text4,#text5{
     height: 150px;
@@ -64,6 +69,7 @@ body{
     float: right;
     background: orange;
     margin: 10px;
+    border-radius: 20px;
 }
 .links{
     float: left;
@@ -74,4 +80,5 @@ body{
     margin: 10px;
     float: right;
     background-color: pink;
+    border-radius: 20px;
 }
