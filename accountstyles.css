@@ -1,0 +1,44 @@
+body {
+  background-color: whitesmoke;
+}
+
+#logo {
+  width: 250px;
+  height: auto;
+}
+
+        /* Style for the dropdown container */
+        .menu {
+          position: relative;
+          display: inline-block;
+      }
+
+      /* Style for the dropdown button */
+      .menuButton {
+          padding: 10px;
+          cursor: pointer;
+          border: 1px solid #ccc;
+          background-color: #f9f9f9;
+      }
+
+      /* Style for the dropdown content (hidden by default) */
+      .menuContent {
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+      }
+
+      /* Style for the dropdown links */
+      .menuContent a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: #333;
+      }
+
+      /* Change color on hover */
+      .menuContent a:hover {
+          background-color: #f1f1f1;
+      }
