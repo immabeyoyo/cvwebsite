@@ -12,8 +12,9 @@ body{
     background-color: white;
 }
 #overigcv{
-    height: 100%;
+    height: 100px;
     float: right;
+    width: 500px;
 }
 #sidebar{
     width: 300px;
@@ -42,7 +43,6 @@ body{
     height: 40px;
     width: 125px;
     margin: 20px;
-    margin-bottom: 40px;
     background-color: yellow;
     border-radius: 20px;
 }
@@ -69,7 +69,6 @@ body{
     border-radius: 20px;
 }
 
-DEZE ONDERSTE 2 KOPJES WERKEN NOG NIET
 #title8,#title9{
     width: 10px;
     height: 10px;
