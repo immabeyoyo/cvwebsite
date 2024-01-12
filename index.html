@@ -6,8 +6,69 @@
     <link rel="stylesheet" href="styles.css">
     <title>CV Maker</title>
     <link rel="icon" type="image/x-icon" href="Logo.png">
+    
   </head>
   <body>
+   
+    <style>
+      button {
+        display: block;
+        margin-top: 5px;
+      }
+  
+      .terugNaarHomeBtn {
+        margin-top: 25px;
+      }
+
+      .all {
+        width: 15%;
+        margin: auto;
+      }
+
+      .logo {
+        margin-top: 25px;
+        
+      }
+     </style>
+
+     <div class="all">
+
+   <p class="header">Vul hier je gegevens in en klik daarna op de knop \'Voeg toe\'.</p>
+   
+   <form>
+<input placeholder="Naam">
+<input placeholder="Achternaam">
+<input placeholder="Email">
+   </form>
+   
+   <p>Geboortedatum:</p>
+   
+   <label>
+    <input type="date">
+   </label>
+ 
+
+   
+   <button  onclick="werkgeverInputSpawner()">Voeg werkgever toe</button>
+
+   <div id="werkgever-inputs">
+
+   </div>
+
+   <button>Voeg toe</button>
+
+   <img src="Logo.png" class="logo">
+
+   <button onclick="terugNaarHome()" class="terugNaarHomeBtn">Terug naar home pagina</button>
+
+
+   
+   
+   </div>
+   
+   
+   
     <script src="script.js"></script>
+
   </body>
 </html>
