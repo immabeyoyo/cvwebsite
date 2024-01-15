@@ -2,11 +2,6 @@ body {
   background-color: whitesmoke;
 }
 
-#logo {
-  width: 250px;
-  height: auto;
-}
-
         /* Style for the dropdown container */
         .menu {
           position: relative;
