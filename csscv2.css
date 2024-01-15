@@ -3,4 +3,79 @@ html{
 }
 body{
     margin: 0px;
+    background: grey;
+}
+#a4{
+    width: 840px;
+    height: 1188px;
+    margin: 400px;
+    background-color: white;
+}
+#overigcv{
+    height: 100px;
+    float: right;
+    width: 500px;
+}
+#sidebar{
+    width: 300px;
+    height: 1188px;
+    background-color: darkblue;
+}
+#picture{
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    margin: 25px;
+    margin-top: 0px;
+    background-color: white;
+}
+#filler1{
+    height: 50px;
+}
+#name2{
+    width: 250px;
+    height: 50px;
+    margin: 25px;
+    margin-bottom: 75px;
+    background-color: lightblue;
+    border-radius: 20px;
+}#title6{
+    height: 40px;
+    width: 125px;
+    margin: 20px;
+    background-color: yellow;
+    border-radius: 20px;
+}
+#ervaring7,#ervaring8,#ervaring9,#ervaring10,#ervaring11{
+    height: 40px;
+    width: 250px;
+    margin: 20px;
+    background: pink;
+    border-radius: 20px;
+}
+#title7{
+    height: 40px;
+    margin: 20px;
+    width: 125px;
+    margin-top: 50px;
+    background-color: yellow;
+    border-radius: 20px;
+}
+#text6,#text7{
+    height: 100px;
+    margin: 20px;
+    width: 250px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+#title8,#title9{
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+}
+#text8,#text9{
+    width: 10px;
+    height: 10px;
+    background-color: orange;
 }
