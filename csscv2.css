@@ -82,10 +82,36 @@ body{
     background-color: orange;
 }
 #overigcv{
-    background-color: red;
-    height: 100px;
     width: 500px;
     position: absolute;
     top: 0;
     right: 0;
+    height: 100%;
+}
+#title8,#title9,#title10{
+    height: 50px;
+    width: 50%;
+    margin-bottom: 10px;
+    background-color: yellow;
+    border-radius: 20px;
+}
+#text8,#text9,#text10,#text11{
+    height: 150px;
+    width: 95%;
+    background-color: orange;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+#text10{
+    margin-bottom: 20px;
+}
+#title8{
+    margin-top: 25px;
+}
+#fotos4,#fotos5,#fotos6{
+    height: 75px;
+    width: 95%;
+    background-color: lime;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
