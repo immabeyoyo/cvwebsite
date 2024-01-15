@@ -1,39 +1,123 @@
 body {
   background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+.Logo img {
+  max-width: 300px;
+  height: auto;
+}
+/* Style for the dropdown container */
+.menu {
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  right: 10px;
 }
 
-        /* Style for the dropdown container */
-        .menu {
-          position: relative;
-          display: inline-block;
-      }
+/* Style for the dropdown button */
+.menuButton {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
 
-      /* Style for the dropdown button */
-      .menuButton {
-          padding: 10px;
-          cursor: pointer;
-          border: 1px solid #ccc;
-          background-color: #f9f9f9;
-      }
+/* Style for the dropdown content (hidden by default) */
+.menuContent {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  width: 150px;
+  text-align: left;
+}
 
-      /* Style for the dropdown content (hidden by default) */
-      .menuContent {
-          display: none;
-          position: absolute;
-          background-color: #fff;
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          z-index: 1;
-      }
+/* Style for the dropdown links */
+.menuContent a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
 
-      /* Style for the dropdown links */
-      .menuContent a {
-          display: block;
-          padding: 10px;
-          text-decoration: none;
-          color: #333;
-      }
+/* Change color on hover */
+.menuContent a:hover {
+  background-color: #f1f1f1;
+}
 
-      /* Change color on hover */
-      .menuContent a:hover {
-          background-color: #f1f1f1;
-      }
+.accountGegevens {
+  display: fex;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  background-color: lightblue;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.mijnAccount {
+  background-color: lightblue;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+  font-size: 26px;
+  margin: 10px;
+}
+
+.accountGegevens {
+  display: flex; 
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  background-color: lightblue;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px; 
+}
+
+.gegevens,
+.fotos,
+.cv {
+  flex: 1; 
+  text-align: center; 
+  padding: 10px; 
+}
+
+
+@media only screen and (max-width: 768px) {
+  .accountGegevens {
+    flex-direction: column; 
+  }
+
+.gegevens,
+.fotos,
+.cv {
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+}
+
+footer {
+  background-color: #102652;
+  padding: 0px;
+  color: white;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+}
+
+footer img {
+  width: 70px;
+  height: auto;
+}
+
