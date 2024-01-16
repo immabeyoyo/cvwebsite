@@ -1,0 +1,41 @@
+body {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.cvs {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  background-color: lightblue;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.cv1 img,
+.cv2 img,
+.cv3 img
+ {
+  width: 200px;
+  height: auto;
+}
+
+.cv1,
+.cv2,
+.cv3 {
+  flex: 1; 
+  text-align: center; 
+  padding: 10px; 
+  }
+
+@media only screen and (max-width: 768px) {
+  .accountGegevens {
+    flex-direction: column; 
+  }
+}

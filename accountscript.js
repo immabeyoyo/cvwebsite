@@ -1,12 +1,5 @@
-let logo = document.createElement('img');
-logo.src = 'Logo.png';
-logo.id = 'logo';
-
-
-document.body.appendChild(logo);
-
 function toggleDropdown() {
-  var dropdownContent = document.getElementById("menu");
+  var dropdownContent = document.getElementById("myMenu");
   if (dropdownContent.style.display === "block") {
       dropdownContent.style.display = "none";
   } else {
@@ -25,4 +18,8 @@ window.onclick = function (event) {
           }
       }
   }
+}
+
+function toIndex() {
+    window.location.href = 'home.html';
 }

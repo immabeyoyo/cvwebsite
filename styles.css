@@ -1,13 +1,8 @@
+/* Dit is even om te testen of alles gekoppeld is*/
 body {
-  background-color: rgba(116, 116, 255, 0.481);
+  background-color: rgb(116, 116, 255);
 }
 
-form {
-  display: block;
-  margin-bottom: 20px;
-}
-
-form input, form label, form button {
-  display: block;
-  margin-bottom: 10px;
+#uitkomst {
+  background-color: rgba(255, 255, 255, 0.581);
 }
