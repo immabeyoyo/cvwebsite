@@ -1,10 +1,17 @@
-// Dit is even om te testen of alles gekoppeld is
-let a = prompt("Wat is a?");
-let b = prompt("Wat is b?");
-let c = a * b;
-let uitkomstDiv = document.createElement("div");
+function werkgeverInputSpawner() {
 
-uitkomstDiv.innerHTML = c;
-uitkomstDiv.id = "uitkomst";
+  
+    var werkgeverInputsDiv = document.getElementById('werkgever-inputs');
+    var nieuwInputVeld = document.createElement('input');
+    nieuwInputVeld.placeholder = 'Werkgever';
+    werkgeverInputsDiv.appendChild(nieuwInputVeld)
 
-document.body.appendChild(uitkomstDiv);
+  
+    nieuwInputVeld.style.display = "block"
+    nieuwInputVeld.style.marginTop = "5px"
+  }
+  
+  function terugNaarHome() {
+    window.location.href = "home.html"
+  }
+  
