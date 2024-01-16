@@ -19,3 +19,7 @@ window.onclick = function (event) {
       }
   }
 }
+
+function toIndex() {
+    window.location.href = 'home.html';
+}

@@ -84,13 +84,27 @@ body {
 }
 
 .gegevens,
-.fotos,
-.cv {
+.fotos {
   flex: 1; 
   text-align: center; 
   padding: 10px; 
 }
 
+.cv {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.veranderButton {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 768px) {
   .accountGegevens {
@@ -102,6 +116,11 @@ body {
 .cv {
   width: 100%; 
   margin-bottom: 10px; 
+}
+
+.veranderButton {
+  position: static;
+  margin-top: 10px;
 }
 }
 
@@ -120,4 +139,3 @@ footer img {
   width: 70px;
   height: auto;
 }
-

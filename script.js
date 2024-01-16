@@ -14,4 +14,3 @@ function werkgeverInputSpawner() {
   function terugNaarHome() {
     window.location.href = "home.html"
   }
-  
