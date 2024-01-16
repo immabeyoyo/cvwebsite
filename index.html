@@ -1,74 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initisal-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>CV Maker</title>
-    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- VOEG HIER DE SUPBASE JS LIBRARY TOE -->
+    <!-- <script src="https://unpkg.com/@supabase/supabase-js@2"></script> -->
+
+      <!-- SET ALS MODULE OM IMPORTS TE KUNNEN DOEN -->
+      <script  type="module" src="supabase.js">
+    </script>
     
-  </head>
-  <body>
-   
-    <style>
-      button {
-        display: block;
-        margin-top: 5px;
-      }
+
+
+</head>
+<body>
   
-      .terugNaarHomeBtn {
-        margin-top: 25px;
-      }
+    <!-- FORM OM LOGIN TE TESTEN -->
+    <form action="" id="loginForm">
+        <h1>Login</h1>
+        <input type="text" id="username" class="form-control" placeholder="Enter your Username...">
+        <input type="password" id="password" class="form-control" placeholder="Enter your Password...">
+        <button type="submit">Submit</button>
+      </form>
 
-      .all {
-        width: 15%;
-        margin: auto;
-      }
+<script src="script.js"></script>
 
-      .logo {
-        margin-top: 25px;
-        
-      }
-     </style>
-
-     <div class="all">
-
-   <p class="header">Vul hier je gegevens in en klik daarna op de knop \'Voeg toe\'.</p>
-   
-   <form>
-<input placeholder="Naam">
-<input placeholder="Achternaam">
-<input placeholder="Email">
-   </form>
-   
-   <p>Geboortedatum:</p>
-   
-   <label>
-    <input type="date">
-   </label>
- 
-
-   
-   <button  onclick="werkgeverInputSpawner()">Voeg werkgever toe</button>
-
-   <div id="werkgever-inputs">
-
-   </div>
-
-   <button>Voeg toe</button>
-
-   <img src="Logo.png" class="logo">
-
-   <button onclick="terugNaarHome()" class="terugNaarHomeBtn">Terug naar home pagina</button>
-
-
-   
-   
-   </div>
-   
-   
-   
-    <script src="script.js"></script>
-
-  </body>
+</body>
 </html>
