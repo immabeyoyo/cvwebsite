@@ -57,6 +57,12 @@ body {
   }
 }
 
+.Kies1,
+.Kies2,
+.Kies3 {
+  cursor: pointer;
+}
+
 footer {
   background-color: #102652;
   padding: 0px;
