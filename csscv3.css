@@ -3,6 +3,7 @@ html{
 }
 body{
     margin: 0;
+    background-color: #809999;
 }
 #a4{
     width: 840pX;
@@ -11,6 +12,10 @@ body{
     background-color: white;
     position: relative;
 }
+#rechts{
+    float: right;
+    width: 500px;
+}
 #triangle {
     width: 840px;
     height: 840px;
@@ -18,12 +23,12 @@ body{
 }
 #picture{
     height: 250px;
-    width: 200px;
+    width: 250px;
     background-color: red;
 }
 #name{
     height: 50px;
-    width: 200px;
+    width: 250px;
     background-color: blue;
 }
 #namepicture{
@@ -34,7 +39,7 @@ body{
     height: 40px;
 }
 #title11{
-    width: 200px;
+    width: 150px;
     height: 50px;
     background-color: yellow;
     margin-left: 40px;
@@ -56,4 +61,18 @@ body{
 }
 #ervaring12{
     margin-top: 10px;
+}
+#title12{
+    float: right;
+    height: 50px;
+    width: 150px;
+    background-color: orange;
+    margin-bottom: 10px;
+}
+#text14,#text15{
+    height: 250px;
+    width: 250px;
+    background-color: yellow;
+    margin-bottom: 10px;
+    float: right;
 }
