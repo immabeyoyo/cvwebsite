@@ -13,8 +13,11 @@ body{
     position: relative;
 }
 #rechts{
-    float: right;
     width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 #triangle {
     width: 840px;
@@ -25,11 +28,13 @@ body{
     height: 250px;
     width: 250px;
     background-color: red;
+    border-radius: 20px;
 }
 #name{
     height: 50px;
     width: 250px;
     background-color: blue;
+    border-radius: 20px;
 }
 #namepicture{
     margin-left: 40px;
@@ -45,34 +50,57 @@ body{
     margin-left: 40px;
     margin-bottom: 30px;
     margin-top: 60px;
+    border-radius: 20px;
 }
 #text13{
     height: 350px;
     width: 250px;
     background-color: orange;
     margin-left: 40px;
+    border-radius: 20px;
 }
-#ervaring12,#ervaring13,#ervaring14,#ervaring15{
+#ervaring12,#ervaring13,#ervaring14,#ervaring15,#ervaring16{
     width: 250px;
     height: 50px;
     background-color: pink;
     margin-bottom: 10px;
     margin-left: 40px;
+    border-radius: 20px;
 }
 #ervaring12{
     margin-top: 10px;
 }
-#title12{
-    float: right;
+#title12,#title13{
+    float: left;
     height: 50px;
-    width: 150px;
+    width: 250px;
     background-color: orange;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-left: 40px;
+    border-radius: 20px;
+
 }
 #text14,#text15{
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 400px;
     background-color: yellow;
     margin-bottom: 10px;
-    float: right;
+    float: left;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+#text16,#text17,#foto7{
+    height: 170px;
+    width: 400px;
+    background-color: yellow;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+#text16{
+    margin-top: 585px;
+}
+#foto7{
+    background-color: lime;
 }
