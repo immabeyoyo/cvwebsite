@@ -59,7 +59,7 @@ body {
   border-radius: 25px;
   margin: auto;
   margin-top: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .mijnAccount {
@@ -68,7 +68,8 @@ body {
   padding: 10px;
   text-align: center;
   font-size: 26px;
-  margin: 10px;
+  margin: 10px auto;
+  width: 80%;
 }
 
 .accountGegevens {
