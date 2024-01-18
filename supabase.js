@@ -1,6 +1,6 @@
 
 // Instructions:  https://github.com/supabase/supabase-js/blob/master/README.md
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
 
 // Gebruik  public anon key van supabse:  Project Setgtings > API > Project API keys > anon public
@@ -10,6 +10,20 @@ const puplic_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSI
 const supabase_url = 'https://bmvgowvyvnyvohpzuhfm.supabase.co';
 // Create a single supabase client for interacting with your database
 const supabase = createClient(supabase_url, puplic_key)
+
+
+let signupForm = document.getElementById("loginForm");
+let username = document.getElementById("username");
+let password = document.getElementById("password");
+
+let { data, error } = await supabase.auth.signUp({
+  email: 'someone@email.com',
+  password: 'EAlJMjPWPfBqqIAwJmjQ'
+})
+
+
+
+
 
 
 // USER LOGIN  function ( ASYCNC function )
