@@ -10,20 +10,17 @@ body{
     height: 1188px;
     margin: 400px;
     background-color: white;
-    margin: 50px auto;
+    position: absolute;
 }
 #overigcv{
     height: 100px;
     float: right;
     width: 500px;
-    margin: 40px;
-    margin-right: 60px;
 }
 #sidebar{
     width: 300px;
     height: 1188px;
     background-color: darkblue;
-    float: left;
 }
 #picture{
     height: 246px;

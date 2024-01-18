@@ -27,13 +27,13 @@ body{
 #picture{
     height: 250px;
     width: 250px;
-    background-color: red;
+    border: solid black 2px;
     border-radius: 20px;
 }
 #name{
     height: 50px;
     width: 250px;
-    background-color: blue;
+    border: solid black 2px;
     border-radius: 20px;
 }
 #namepicture{
@@ -46,7 +46,7 @@ body{
 #title11{
     width: 150px;
     height: 50px;
-    background-color: yellow;
+    border: solid black 2px;
     margin-left: 40px;
     margin-bottom: 30px;
     margin-top: 60px;
@@ -55,14 +55,14 @@ body{
 #text13{
     height: 350px;
     width: 250px;
-    background-color: orange;
+    border: solid black 2px;
     margin-left: 40px;
     border-radius: 20px;
 }
 #ervaring12,#ervaring13,#ervaring14,#ervaring15,#ervaring16{
     width: 250px;
     height: 50px;
-    background-color: pink;
+    border: solid black 2px;
     margin-bottom: 10px;
     margin-left: 40px;
     border-radius: 20px;
@@ -74,7 +74,7 @@ body{
     float: left;
     height: 50px;
     width: 250px;
-    background-color: orange;
+    border: solid black 2px;
     margin-bottom: 20px;
     margin-top: 60px;
     margin-left: 40px;
@@ -84,7 +84,7 @@ body{
 #text14,#text15{
     height: 150px;
     width: 400px;
-    background-color: yellow;
+    border: solid black 2px;
     margin-bottom: 10px;
     float: left;
     margin-left: 40px;
@@ -93,7 +93,7 @@ body{
 #text16,#text17,#foto7{
     height: 170px;
     width: 400px;
-    background-color: yellow;
+    border: solid black 2px;
     margin-top: 20px;
     margin-left: 40px;
     border-radius: 20px;
@@ -102,5 +102,5 @@ body{
     margin-top: 585px;
 }
 #foto7{
-    background-color: lime;
+    border: solid black 2px;
 }
