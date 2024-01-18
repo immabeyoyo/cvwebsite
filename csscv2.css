@@ -26,11 +26,12 @@ body{
     float: left;
 }
 #picture{
-    height: 250px;
+    height: 246px;
     width: 250px;
     border-radius: 200px;
     margin: 25px;
     margin-top: 0px;
+    border: solid black 2px;
     background-color: white;
 }
 #filler1{
@@ -38,50 +39,55 @@ body{
 }
 #name2{
     width: 250px;
-    height: 50px;
+    height: 46px;
     margin: 25px;
     margin-bottom: 75px;
-    background-color: lightblue;
+    border: solid black 2px;
     border-radius: 20px;
+    background-color: white;
 }#title6{
-    height: 40px;
+    height: 36px;
     width: 125px;
     margin: 20px;
-    background-color: yellow;
+    border: solid black 2px;
     border-radius: 20px;
+    background-color: white;
 }
 #ervaring7,#ervaring8,#ervaring9,#ervaring10,#ervaring11{
-    height: 40px;
+    height: 36px;
     width: 250px;
     margin: 20px;
-    background: pink;
+    border: solid black 2px;
     border-radius: 20px;
+    background-color: white;
 }
 #title7{
-    height: 40px;
+    height: 36px;
     margin: 20px;
     width: 125px;
     margin-top: 50px;
-    background-color: yellow;
+    border: solid black 2px;
     border-radius: 20px;
+    background-color: white;
 }
 #text6,#text7{
-    height: 100px;
+    height: 96px;
     margin: 20px;
     width: 250px;
-    background-color: orange;
+    border: solid black 2px;
     border-radius: 20px;
+    background-color: white;
 }
 
 #title8,#title9{
     width: 10px;
-    height: 10px;
-    background-color: yellow;
+    height: 6px;
+    border: solid black 2px;
 }
 #text8,#text9{
     width: 10px;
-    height: 10px;
-    background-color: orange;
+    height: 6px;
+    border: solid black 2px;
 }
 #overigcv{
     width: 500px;
@@ -89,18 +95,19 @@ body{
     top: 0;
     right: 0;
     height: 100%;
+    float: right;
 }
 #title8,#title9,#title10{
-    height: 50px;
+    height: 46px;
     width: 50%;
     margin-bottom: 10px;
-    background-color: yellow;
+    border: solid black 2px;
     border-radius: 20px;
 }
 #text8,#text9,#text10,#text11{
-    height: 150px;
+    height: 146px;
     width: 95%;
-    background-color: orange;
+    border: solid black 2px;
     margin-bottom: 30px;
     border-radius: 20px;
 }
@@ -111,9 +118,9 @@ body{
     margin-top: 25px;
 }
 #fotos4,#fotos5,#fotos6{
-    height: 75px;
+    height: 74px;
     width: 95%;
-    background-color: lime;
+    border: solid black 2px;
     border-radius: 20px;
     margin-bottom: 10px;
 }
