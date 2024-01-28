@@ -10,8 +10,6 @@ body{
     height: 1188px;
     margin: 400px;
     background-color: white;
-    position: absolute;
-    margin-bottom: 50px;
 }
 #overigcv{
     height: 100px;
@@ -24,12 +22,11 @@ body{
     background-color: darkblue;
 }
 #picture{
-    height: 246px;
+    height: 250px;
     width: 250px;
     border-radius: 200px;
     margin: 25px;
     margin-top: 0px;
-    border: solid black 2px;
     background-color: white;
 }
 #filler1{
@@ -37,91 +34,48 @@ body{
 }
 #name2{
     width: 250px;
-    height: 46px;
+    height: 50px;
     margin: 25px;
     margin-bottom: 75px;
-    border: solid black 2px;
+    background-color: lightblue;
     border-radius: 20px;
-    background-color: white;
 }#title6{
-    height: 36px;
+    height: 40px;
     width: 125px;
     margin: 20px;
-    border: solid black 2px;
+    background-color: yellow;
     border-radius: 20px;
-    background-color: white;
 }
 #ervaring7,#ervaring8,#ervaring9,#ervaring10,#ervaring11{
-    height: 36px;
+    height: 40px;
     width: 250px;
     margin: 20px;
-    border: solid black 2px;
+    background: pink;
     border-radius: 20px;
-    background-color: white;
 }
 #title7{
-    height: 36px;
+    height: 40px;
     margin: 20px;
     width: 125px;
     margin-top: 50px;
-    border: solid black 2px;
+    background-color: yellow;
     border-radius: 20px;
-    background-color: white;
 }
 #text6,#text7{
-    height: 96px;
+    height: 100px;
     margin: 20px;
     width: 250px;
-    border: solid black 2px;
+    background-color: orange;
     border-radius: 20px;
-    background-color: white;
 }
 
 #title8,#title9{
     width: 10px;
-    height: 6px;
-    border: solid black 2px;
+    height: 10px;
+    background-color: yellow;
 }
 #text8,#text9{
     width: 10px;
-    height: 6px;
-    border: solid black 2px;
-}
-#overigcv{
-    width: 500px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    float: right;
-}
-#title8,#title9,#title10{
-    height: 46px;
-    width: 50%;
-    margin-bottom: 10px;
-    border: solid black 2px;
-    border-radius: 20px;
-}
-#text8,#text9,#text10,#text11{
-    height: 146px;
-    width: 95%;
-    border: solid black 2px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-}
-#text10{
-    margin-bottom: 10px;
-}
-#text11{
-    margin-bottom: 10px;
-}
-#title8{
-    margin-top: 25px;
-}
-#fotos4,#fotos5,#fotos6{
-    height: 74px;
-    width: 95%;
-    border: solid black 2px;
-    border-radius: 20px;
-    margin-bottom: 30px;
+    height: 10px;
+    background-color: orange;
 }

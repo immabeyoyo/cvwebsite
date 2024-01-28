@@ -10,3 +10,4 @@ function nextpage() {
     function Inloggen() {
     window.location.href = "Inloggen.html"
     }
+

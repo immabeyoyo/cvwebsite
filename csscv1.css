@@ -6,27 +6,26 @@ body{
     background-color: grey;
 }
 #a4{
-    width: 840pX;
+    width: 840px;
     height: 1188px;
-    margin: 50px auto;  
+    margin: 400px;
     background-color: white;
-    position: relative;
 }
 #picture{
     border-radius: 200px;
-    border: solid black 2px;
-    width: 290px;
-    height: 290px;
+    background-color: red;
+    width: 300px;
+    height: 300px;
     text-align: center;
     float:left;
 }
-#name1{
+#name{
     float: right;
     margin-top: 100px;
     margin-right: 100px;
     width: 400px;
     height: 50px;
-    border: solid black 2px;
+    background-color: blue;
     border-radius: 20px;
 }
 #header{
@@ -35,36 +34,32 @@ body{
 }
 #bijlage3,#bijlage2,#bijlage1{
     width: 300px;
-    float: left;
-}
-.links{
-    width: 300px;
 }
 #titel1,#titel2,#titel3{
     height: 50px;
     width: 300px;
-    border: solid black 2px;
+    background-color: yellow;
     margin: 10px;
     border-radius: 20px;
 }
 #text1,#text2,#text3{
     height: 130px;
     width: 300px;
-    border: solid black 2px;
+    background-color: orange;
     margin: 10px;
     border-radius: 20px;
 }
 #fotos1,#fotos2,#fotos3{
-    height: 70px;
+    height: 77px;
     width: 300px;
-    border: solid black 2px;
+    background-color: greenyellow   ;
     margin: 10px;
     border-radius: 20px;
 }
 #title4,#title5{
     height: 50px;
     width: 250px;
-    border: solid black 2px;
+    background-color: yellow;
     float: right;
     margin: 10px;
     margin-right: 160px;
@@ -74,7 +69,7 @@ body{
     height: 150px;
     width: 400px;
     float: right;
-    border: solid black 2px;
+    background: orange;
     margin: 10px;
     border-radius: 20px;
 }
@@ -86,6 +81,6 @@ body{
     width: 400px;
     margin: 10px;
     float: right;
-    border: solid black 2px;
+    background-color: pink;
     border-radius: 20px;
 }

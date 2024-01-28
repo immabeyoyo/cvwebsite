@@ -3,23 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initisal-scale=1.0">
-    <meta name="Keywords" content="CV, Maak CV, Solliciteren, Maker">
-    <meta name ="Description" content="Met deze websiste kan je gemakkelijk een cv maken.">
-    <title>CV-creator</title>
-    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <title>Account Maken</title>
+    <link rel="icon" href="Logo.png"/>
+ <script type="module" src="js.js"></script>
   </head>
 
   <body>
+    
     <h2>Account Maken</h2>
-    <form>
-        <input placeholder="Email">
-        <input placeholder="Wachtwoord">
+    <form action="" id="signupForm">
+        <input type="text" id="username2" class="form-control" placeholder="Email">
+        <input type="password" id="password2" class="form-control" placeholder="Wachtwoord">
+        <button type="submit">Account Maken</button>
     </form>
     
-    <button>Account Maken</button>
+    <button onclick="pik()">Terug naar vorige pagina</button>
+    <script>
+      function pik() {
+        window.location.href = "home.html"
+      }
+    </script>
 
-    <button onclick="gaTerug()">Terug naar vorige pagina</button>
+<button onclick="hoi()">yfg</button>
 
-    <script src="accountmaken.js"></script>
+   
   </body>
-  </html>
+</html>
