@@ -32,9 +32,7 @@ console.log(response)
 document.getElementById("logout").addEventListener("click", signout)
 
 
-const { data: { user } } = await supabase.auth.getUser()
 
-let div = document.createElement("div").innerHTML = user
 
 
 
