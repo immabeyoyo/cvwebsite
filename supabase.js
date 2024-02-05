@@ -85,7 +85,7 @@ else {
 
 let signupForm = document.getElementById("signupForm");
 
-signupForm.addEventListener("submit", (e) => {
+loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   let username = document.getElementById("username2");
@@ -103,21 +103,19 @@ signupForm.addEventListener("submit", (e) => {
   }
 });
 
-
-
-
-
-
-
-
-
-
-
 function hoi() {
-  let div = document.createElement("div")
-  div.innerHTML = "hello world"
-   document.body.appendChild(div)
- }
+  
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
