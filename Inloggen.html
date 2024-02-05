@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Keywords" content="CV, Maak CV, Solliciteren, Maker">
-    <meta name ="Description" content="Met deze websiste kan je gemakkelijk een cv maken.">
-    <link rel="stylesheet" href="inloggen.css">
-    <title>CV-creator</title>
-    <link rel="icon" type="image/x-icon" href="Logo.png">
-  </head>
+    <title>Document</title>
 
-  <body>
-<h2>Inloggen</h2>
-<form>
-    <input placeholder="Email">
-    <input placeholder="Wachtwoord">
-</form>
+    <!-- VOEG HIER DE SUPBASE JS LIBRARY TOE -->
+    <!-- <script src="https://unpkg.com/@supabase/supabase-js@2"></script> -->
 
-<button>Inloggen</button>
+      <!-- SET ALS MODULE OM IMPORTS TE KUNNEN DOEN -->
+      <script  type="module" src="supabase.js">
+    </script>
+    
 
-<button onclick="gaTerug()">Terug naar vorige pagina</button>
 
-<script src="inloggen.js"></script>
-  </body>
-  </html>
+</head>
+<body>
+  
+    <!-- FORM OM LOGIN TE TESTEN -->
+    <form action="" id="loginForm">
+        <h1>Login</h1>
+        <input type="text" id="username" class="form-control" placeholder="Enter your Username...">
+        <input type="password" id="password" class="form-control" placeholder="Enter your Password...">
+        <button type="submit">Submit</button>
+      </form>
+
+      <button onclick="hoi()">yfg</button>
+
+</body>
+</html>
