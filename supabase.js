@@ -1,4 +1,5 @@
 
+
 // Instructions:  https://github.com/supabase/supabase-js/blob/master/README.md
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
@@ -12,24 +13,10 @@ const supabase_url = 'https://bmvgowvyvnyvohpzuhfm.supabase.co';
 const supabase = createClient(supabase_url, puplic_key)
 
 
-let signupForm = document.getElementById("loginForm");
-let username = document.getElementById("username");
-let password = document.getElementById("password");
-
-let { data, error } = await supabase.auth.signUp({
-  email: 'someone@email.com',
-  password: 'EAlJMjPWPfBqqIAwJmjQ'
-})
-
-
-
-
-
-
 // USER LOGIN  function ( ASYCNC function )
 async function loginSupabase(username, password){
 
-    console.log('tets:', username,password);
+    console.log('test:', username,password);
 
     let { data, error } = await supabase.auth.signInWithPassword({
         email: username,
@@ -69,3 +56,114 @@ loginForm.addEventListener("submit", (e) => {
     // password.value = "";
   }
 });
+
+
+
+
+
+
+async function signupSupabase(username, password) {
+
+let { data, error } = await supabase.auth.signUp({
+  email: username,
+  password: password
+})
+
+if(error) {
+  console.error(error)
+  alert('error: ', JSON.stringify(error))
+}
+
+else {
+  console.log(data)
+  alert('Account aanmaken gelukt!', JSON.stringify(data))
+}
+
+}
+
+
+
+let signupForm = document.getElementById("signupForm");
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let username = document.getElementById("username2");
+  let password = document.getElementById("password2");
+
+  if (username.value == "" || password.value == "") {
+    alert("Ensure you input a value in both fields!");
+  } else {
+
+    // LOGIN met loginSupabase() function
+    signupSupabase(username.value,password.value);
+
+    // username.value = "";
+    // password.value = "";
+  }
+});
+
+function hoi() {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+let username = document.getElementById("username");
+let password = document.getElementById("password");
+
+async function signupSupabase(username, password){
+
+let { data, error } = await supabase.auth.signUp({
+email: username,
+password: password
+})
+
+if(error){
+  console.error(error);
+  alert('ERROR: ', JSON.stringify(error));
+}
+
+else{
+  console.log(data);
+  alert('Login gelukt!: ', JSON.stringify(data));
+}
+}
+
+
+
+let signupForm = document.getElementById("signupForm");
+
+signupForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let username = document.getElementById("username");
+  let password = document.getElementById("password");
+
+  if (username.value == "" || password.value == "") {
+    alert("Ensure you input a value in both fields!");
+  } else {
+
+    // LOGIN met loginSupabase() function
+    signupSupabase(username.value,password.value);
+
+    // username.value = "";
+    // password.value = "";
+  }
+});
+
+*/

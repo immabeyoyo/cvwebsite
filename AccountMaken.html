@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initisal-scale=1.0">
     <title>Account Maken</title>
     <link rel="icon" type="image/x-icon" href="Logo.png">
+    <script type="module" src="supabase.js"></script>
   </head>
 
   <body>
     <h2>Account Maken</h2>
     <form action="" id="signupForm">
-        <input id="username" placeholder="Email">
-        <input id="password" placeholder="Wachtwoord">
+        <input type="text" id="username2" class="form-control" placeholder="Email">
+        <input type="password" id="password2" class="form-control" placeholder="Wachtwoord">
         <button type="submit">Account Maken</button>
     </form>
     
-    
+    <button onclick="pik()">Terug naar vorige pagina</button>
+    <script>
+      function pik() {
+        window.location.href = "home.html"
+      }
+    </script>
 
-    <button onclick="gaTerug()">Terug naar vorige pagina</button>
+    <button onclick="hoi()"></button>
 
-    <script src="accountmaken.js"></script>
+
   </body>
-  </html>
+</html>
