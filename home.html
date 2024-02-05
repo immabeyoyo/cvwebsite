@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="homestyles.css">
     <title>CV Maker</title>
     <link rel="icon" type="image/x-icon" href="Logo.png">
+    <script type="module" src="homescript.js"></script>
+    
   </head>
   <body>
     
@@ -18,16 +20,25 @@
     
     <div class="inlog">
       <p>Maak hier een account aan of log in <br>om je cv op te slaan</p>
-    <button onclick="accountMaken()">Account aanmaken</button>
-    <button onclick="Inloggen()">Inloggen</button>
+    <button id="accountmaken" >Account aanmaken</button>
+    <button id="inloggen" >Inloggen</button>
     </div>
 
     <div id="advertentie">
       Uw advertentie hier? <br> Dat kan! Neem nu contact op. <br> michiel.vanwijk@student.vonknh.nl
     </div>
 
-    <script src="homescript.js"></script>
+ 
     
 
+   <div>
+    <p>If logged in, click button below to log out:</p>
+    <button id="logout">log out</button>
+   </div>
+
+
+
+ 
+  
   </body>
 </html>
