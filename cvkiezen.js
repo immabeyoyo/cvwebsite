@@ -1,11 +1,18 @@
-function kiesCV1 () {
-  window.location.href = "home.html"
+let chosenCV = "";
+
+function kiesCV(cv) {
+  chosenCV = cv;
+  alert(cv + " is gekozen!");
 }
 
-function kiesCV2 () {
-  window.location.href = "home.html"
-}
+document.getElementById("Kies1").addEventListener("click", function() {
+  kiesCV("cv1");
+});
 
-function kiesCV3 () {
-  window.location.href = "home.html"
-}
+document.getElementById("Kies2").addEventListener("click", function() {
+  kiesCV("cv2");
+});
+
+document.getElementById("Kies3").addEventListener("click", function() {
+  kiesCV("cv3");
+});

@@ -1,13 +1,38 @@
 
-function nextpage() {
-  window.location.href = "index.html"
-  }
 
-  function accountMaken() {
+import {supabase} from './supabase.js'
+
+
+ document.getElementById("accountmaken").addEventListener("click", accountmaken)
+
+ function accountmaken() {
     window.location.href = "AccountMaken.html"
-    }
+ }
     
-    function Inloggen() {
+document.getElementById("inloggen").addEventListener("click", inloggen)
+
+    function inloggen() {
     window.location.href = "Inloggen.html"
     }
+
+   
+ 
+
+ async function signout() {
+     
+ 
+    let response = await supabase.auth.signOut()
+
+console.log(response)
+
+
+ }
+
+
+document.getElementById("logout").addEventListener("click", signout)
+
+
+
+
+
 
