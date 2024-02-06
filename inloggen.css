@@ -1,6 +1,13 @@
 #loginForm {
   margin: auto;
   background-color: blue;
-  border-radius: 25px;
-  
+  border-radius: 20px;
+}
+
+#loginForm h1 {
+  text-align: center;
+  background-color: green;
+}
+#loginForm button {
+  float: left;
 }
