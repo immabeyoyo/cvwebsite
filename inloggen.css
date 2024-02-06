@@ -14,29 +14,31 @@ body {
   border-radius: 20px;
   height: 400px;
   width: 60%;
+  align-items: center;
 }
 
 #loginForm h1 {
   text-align: center;
   background-color: rgb(56, 156, 189);
+  width: 100%;
 }
 
 #loginForm button {
-  float: center;
-  max-width: 30%;
+  max-width: 41%;
+  width: 100%;
   height: auto;
   margin: 5px;
 }
 
 #username, #password {
-  max-width: 50%;
+  max-width: 40%;
+  width: 100%;
   height: auto;
-  margin-left: 5px;
-  margin-top: 1px;
+  margin: 1px;
 }
 
 #username {
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 footer {
