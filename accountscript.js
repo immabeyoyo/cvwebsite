@@ -30,3 +30,4 @@ function veranderCV() {
 }
 
 document.querySelector('.veranderButton').addEventListener('click', veranderCV);
+

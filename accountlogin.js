@@ -61,24 +61,19 @@ loginForm.addEventListener("submit", (e) => {
      password.value = "";
   }
 });
-
-
+/*
+// functie die de gebruiker uitlogt
 async function signout() {
-     
- 
     let response = await supabase.auth.signOut()
-
-console.log(response)
-
-
+    console.log(response)
  }
-
-
+// Voert de functie signout uit als de gebruiker op de logout knop drukt.
 document.getElementById("logout").addEventListener("click", signout)
+*/
 
-
-document.getElementById("gaterug").addEventListener("click", terugnaarhome)
-
+// Functie die de gebruiker naar home.html stuurt
 function terugnaarhome() {
     window.location.href = "home.html"
 }
+// Gaat terug naar de homepagina als de gebruiker op de knop drukt
+document.getElementById("gaterug").addEventListener("click", terugnaarhome)
