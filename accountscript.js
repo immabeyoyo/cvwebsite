@@ -23,6 +23,7 @@ if (user) {
   console.log('User is not logged in');
 }
 
+// Button die verwijst naar cvkiezen.html pagina als de gebruiker een cv wilt kiezen
 function toIndex() {
     window.location.href = 'cvkiezen.html';
 }

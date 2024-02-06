@@ -84,8 +84,7 @@ body {
   padding: 20px; 
 }
 
-.gegevens,
-.fotos {
+.gegevens {
   flex: 1; 
   text-align: center; 
   padding: 10px; 
@@ -113,7 +112,6 @@ body {
   }
 
 .gegevens,
-.fotos,
 .cv {
   width: 100%; 
   margin-bottom: 10px; 
