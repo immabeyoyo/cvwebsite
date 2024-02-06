@@ -22,7 +22,7 @@ async function loginSupabase(username, password){
     let { data, error } = await supabase.auth.signInWithPassword({
         email: username,
         password: password
-    })
+    });
 
     if(error){
         console.error(error);
@@ -30,6 +30,10 @@ async function loginSupabase(username, password){
     }else{
         console.log(data);
         alert('Login gelukt!: ', JSON.stringify(data));
+
+        sessionStorage.setItem('user', JSON.stringify(data.user));
+
+        window.location.href = 'account.html';
     }
   
 }
@@ -71,9 +75,6 @@ console.log(response)
 
 
 document.getElementById("logout").addEventListener("click", signout)
-
-
-
 
 
 document.getElementById("gaterug").addEventListener("click", terugnaarhome)
