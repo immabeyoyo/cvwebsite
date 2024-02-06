@@ -22,7 +22,7 @@ body {
 }
 
 #loginForm button {
-  float: left;
+  float: center;
   max-width: 30%;
   height: auto;
   margin: 5px;
