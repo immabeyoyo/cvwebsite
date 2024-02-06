@@ -53,8 +53,8 @@ loginForm.addEventListener("submit", (e) => {
     // LOGIN met loginSupabase() function
     loginSupabase(username.value,password.value);
 
-    // username.value = "";
-    // password.value = "";
+     username.value = "";
+     password.value = "";
   }
 });
 
