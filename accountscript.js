@@ -1,7 +1,7 @@
-// accountscript.js
-const supabase = createClient('your-supabase-url', 'your-api-key');
+import {supabase} from './supabase.js'
 
-const user = supabase.auth.user();
+
+const user = supabase.auth.user;
 
 if (user) {
   // User is logged in
