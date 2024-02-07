@@ -62,9 +62,3 @@ document.getElementById("gaterug").addEventListener("click", terugnaarhome)
 function terugnaarhome() {
     window.location.href = "home.html"
 }
-
-document.querySelector('#inloggen').addEventListener('click', naarInlogPagina);
-
-function naarInlogPagina() {
-  window.location.href = "inloggen.html"
-}

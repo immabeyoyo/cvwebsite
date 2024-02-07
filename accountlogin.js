@@ -22,18 +22,14 @@ async function loginSupabase(username, password){
     let { data, error } = await supabase.auth.signInWithPassword({
         email: username,
         password: password
-    });
+    })
 
     if(error){
         console.error(error);
-        alert('Verkeerde inlog gegevens! ', JSON.stringify(error));
+        alert('ERROR: Verkeerde inlog gegevens! ', JSON.stringify(error));
     }else{
         console.log(data);
-        alert('Login gelukt!', JSON.stringify(data));
-
-        sessionStorage.setItem('user', JSON.stringify(data.user));
-
-        window.location.href = 'account.html';
+        alert('Login gelukt!: ', JSON.stringify(data));
     }
   
 }
@@ -50,33 +46,38 @@ loginForm.addEventListener("submit", (e) => {
   let username = document.getElementById("username");
   let password = document.getElementById("password");
 
-  if (e.submitter && e.submitter.id === "inloggenButton") {
-    if (username.value == "" || password.value == "") {
-        alert("Voer aub uw email en wachtwoord in!");
-    } else {
+  if (username.value == "" || password.value == "") {
+    alert("Ensure you input a value in both fields!");
+  } else {
 
-        // LOGIN met loginSupabase() function
-        loginSupabase(username.value,password.value);
+    // LOGIN met loginSupabase() function
+    loginSupabase(username.value,password.value);
 
-        username.value = "";
-        password.value = "";
-    }
+    // username.value = "";
+    // password.value = "";
   }
 });
 
-/*
-// functie die de gebruiker uitlogt
-async function signout() {
-    let response = await supabase.auth.signOut()
-    console.log(response)
- }
-// Voert de functie signout uit als de gebruiker op de logout knop drukt.
-document.getElementById("logout").addEventListener("click", signout)
-*/
 
-// Functie die de gebruiker naar home.html stuurt
+async function signout() {
+     
+ 
+    let response = await supabase.auth.signOut()
+
+console.log(response)
+
+
+ }
+
+
+document.getElementById("logout").addEventListener("click", signout)
+
+
+
+
+
+document.getElementById("gaterug").addEventListener("click", terugnaarhome)
+
 function terugnaarhome() {
     window.location.href = "home.html"
 }
-// Gaat terug naar de homepagina als de gebruiker op de knop drukt
-document.getElementById("gaterug").addEventListener("click", terugnaarhome)
