@@ -26,10 +26,10 @@ async function loginSupabase(username, password){
 
     if(error){
         console.error(error);
-        alert('ERROR: Verkeerde inlog gegevens! ', JSON.stringify(error));
+        alert('Verkeerde inlog gegevens! ', JSON.stringify(error));
     }else{
         console.log(data);
-        alert('Login gelukt!: ', JSON.stringify(data));
+        alert('Login gelukt!', JSON.stringify(data));
 
         sessionStorage.setItem('user', JSON.stringify(data.user));
 
@@ -50,17 +50,20 @@ loginForm.addEventListener("submit", (e) => {
   let username = document.getElementById("username");
   let password = document.getElementById("password");
 
-  if (username.value == "" || password.value == "") {
-    alert("Ensure you input a value in both fields!");
-  } else {
+  if (e.submitter && e.submitter.id === "inloggenButton") {
+    if (username.value == "" || password.value == "") {
+        alert("Voer aub uw email en wachtwoord in!");
+    } else {
 
-    // LOGIN met loginSupabase() function
-    loginSupabase(username.value,password.value);
+        // LOGIN met loginSupabase() function
+        loginSupabase(username.value,password.value);
 
-     username.value = "";
-     password.value = "";
+        username.value = "";
+        password.value = "";
+    }
   }
 });
+
 /*
 // functie die de gebruiker uitlogt
 async function signout() {
