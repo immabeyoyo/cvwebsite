@@ -15,7 +15,9 @@ async function fetchDataFromCVTable1() {
       throw error;
     }
 
-    console.log('Opgehaalde data: ', data);
+    const dataString = data.toString();
+    console.log('Opgehaalde data: ', dataString);
+    
     return data;
   } catch (error) {
     console.error('Error fetching data:', error.message);
