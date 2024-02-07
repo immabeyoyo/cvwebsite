@@ -31,3 +31,8 @@ function veranderCV() {
 
 document.querySelector('.veranderButton').addEventListener('click', veranderCV);
 
+function printCV() {
+  window.print();
+}
+
+document.querySelector('.printButton').addEventListener('click', printCV);
