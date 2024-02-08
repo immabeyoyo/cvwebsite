@@ -1,34 +1,26 @@
-import { supabase } from './supabase.js';
+import { supabase } from './supabase.js'
 
-async function fetchVoornaamDataFromCVTable1() {
-  try {
-    const tableName = 'CVTable1';
-    const columnName = '*';
+try {
+  let { data: CVTable1, error } = await supabase
+      .from('CVTable1')
+      .select('*');
 
-    // Perform Supabase query to select the 'voornaam' column
-    const { data, error } = await supabase
-      .from(tableName)
-      .select(columnName);
+  if (error) {
+      console.error('Error fetching data:', error);
+  } else {
+      // Assuming CVTable1 is an array of objects, you can format and display it in the dataContainer
+      const dataContainer = document.getElementById('dataContainer');
+      
+      // Clear previous content in the container
+      dataContainer.innerHTML = '';
 
-    console.log('Supabase Response:', { data, error });
-
-    if (error) {
-      throw error;
-    }
-
-    if (data && data.length > 0) {
-      // Extract and log the 'voornaam' values
-      const voornaamData = data.map(entry => entry[columnName]);
-      console.log('Opgehaalde voornaam data:', voornaamData);
-      return voornaamData;
-    } else {
-      console.log('No voornaam data found.');
-      return [];
-    }
-  } catch (error) {
-    console.error('Error fetching voornaam data:', error.message);
+      // Iterate over the data and create HTML elements for each entry
+      CVTable1.forEach(item => {
+          const listItem = document.createElement('div');
+          listItem.textContent = JSON.stringify(item);
+          dataContainer.appendChild(listItem);
+      });
   }
+} catch (err) {
+  console.error('An error occurred:', err);
 }
-
-// Call the function to fetch voornaam data
-fetchVoornaamDataFromCVTable1();
