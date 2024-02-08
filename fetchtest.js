@@ -1,20 +1,20 @@
-import { supabase } from './supabase.js'
+import { supabase } from './supabase.js' // Importeer de key en url van supabase
 
 try {
   let { data: CVTable1, error } = await supabase
-      .from('CVTable1')
-      .select('*');
+      .from('CVTable1') // Van welke tabel wil je het selecteren
+      .select('*'); // Welke column?
 
   if (error) {
-      console.error('Error fetching data:', error);
+      console.error('Error fetching data:', error); // Gooit een error in de console als hij data niet kan ophalen
   } else {
-      // Assuming CVTable1 is an array of objects, you can format and display it in the dataContainer
+      // Als hij de data wel kan ophalen, zet het dan in de div met de id dataContainer.
       const dataContainer = document.getElementById('dataContainer');
       
-      // Clear previous content in the container
+      // Als er al iets in de container is haal het dan weg.
       dataContainer.innerHTML = '';
 
-      // Iterate over the data and create HTML elements for each entry
+      // Een loop die over elk item in de column gaat, convert dan de data uit de CVTable1 array naar een JSON string en er dan een div van maakt en die div in de dataContainer div zet.
       CVTable1.forEach(item => {
           const listItem = document.createElement('div');
           listItem.textContent = JSON.stringify(item);
@@ -22,5 +22,5 @@ try {
       });
   }
 } catch (err) {
-  console.error('An error occurred:', err);
+  console.error('An error occurred:', err); // Als er een error is in deze try functie, dan kom het bericht: An error occured: in de console.
 }
