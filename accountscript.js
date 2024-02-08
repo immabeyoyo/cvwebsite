@@ -20,6 +20,16 @@ window.onclick = function (event) {
   }
 }
 
+<<<<<<< Updated upstream
 function toIndex() {
     window.location.href = 'cvkiezen.html';
 }
+=======
+
+// Button die verwijst naar cvkiezen.html pagina als de gebruiker een cv wilt kiezen
+function veranderCV() {
+    window.location.href = 'cvkiezen.html';
+}
+
+
+>>>>>>> Stashed changes
