@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function uploadreview() {
     document.querySelector("#reviewmaker #reviewtitle").contentEditable = 'false';
     document.querySelector("#reviewmaker #review").contentEditable = 'false';
@@ -79,20 +78,3 @@ function button5(){
     const button5 = document.querySelector("#reviewmaker #star5")
     button5.style.backgroundImage = "url('star (1).png')";
 }
-=======
-function uploadreview() {
-    console.log("Disabling contentEditable...");
-    document.querySelector("#revieuwmaker #revieuwtitle").contentEditable = 'false';
-    document.querySelector("#revieuwmaker #revieuw").contentEditable = 'false';
-
-    var sourceElement = document.getElementById("revieuwmaker");
-    var clonedElement = sourceElement.cloneNode(true);
-    clonedElement.id = "submitted";
-    var targetElement = document.getElementById('revieuws');
-    targetElement.appendChild(clonedElement);
-
-    document.querySelector("#revieuwmaker #revieuwtitle").contentEditable = 'true';
-    document.querySelector("#revieuwmaker #revieuw").contentEditable = 'true';
-
-}
->>>>>>> 6b551448844b887c2eb414ba29f4bc4925f7e497
