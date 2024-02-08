@@ -1,27 +1,23 @@
 import { supabase } from './supabase.js';
 
-// Haal de data op van tabel CVTable1
-async function fetchDataFromCVTable1() {
-  try {
-    // Geef aan welke naam en zet die in de const tableName
-    const tabelNaam = 'CVTable1';
+try {
+  let { data: CVTable1, error } = await supabase
+  .from('CVTable1')
+  .select('*')
 
-    // Doe een request aan supabase
-    const { data, error } = await supabase
-      .from(tabelNaam) // De gekozen tabel
-      .select('voornaam'); // Hier kies je welke colommen je wilt selecteren
+if (error) {
+  console.error('Error met data ophalen', error);
+} else {
+  const dataContainer = document.getElementById('div1');
 
-    if (error) {
-      throw error;
-    }
+  dataContainer.innerHTML = '';
 
-    const dataString = data.toString();
-    console.log('Opgehaalde data: ', dataString);
-    
-    return data;
-  } catch (error) {
-    console.error('Error fetching data:', error.message);
-  }
+  CVTable1.forEach(item => {
+    const listItem = document.createElement('div');
+    listItem.textContent = JSON.stringify(item);
+    dataContainer.appendChild(listItem);
+  });
 }
-
-fetchDataFromCVTable1();
+} catch (err) {
+  console.error('An error occurred:', err);
+}
