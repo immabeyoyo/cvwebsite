@@ -78,3 +78,15 @@ function button5(){
     const button5 = document.querySelector("#reviewmaker #star5")
     button5.style.backgroundImage = "url('star (1).png')";
 }
+function like(){
+    const button1 = document.querySelector("#thumbs #thumb1")
+    button1.style.backgroundImage = "like (1).png";
+    const button2 = document.querySelector("#thumbs #thumb2")
+    button2.style.backgroundImage = "thumb-down.png";
+}
+function dislike(){
+    const button1 = document.querySelector("#thumbs #thumb1")
+    button1.style.backgroundImage = "thumb-down.png";
+    const button2 = document.querySelector("#thumbs #thumb2")
+    button2.style.backgroundImage = "like (1).png";
+}
