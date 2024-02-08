@@ -7,4 +7,5 @@ const puplic_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSI
 // Je vind deze op: Project Setgtings > API > Project API keys > URL
 const supabase_url = 'https://bmvgowvyvnyvohpzuhfm.supabase.co';
 // Create a single supabase client for interacting with your database
+
 export const supabase = createClient(supabase_url, puplic_key)
