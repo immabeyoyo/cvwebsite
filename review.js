@@ -1,16 +1,16 @@
 function uploadreview() {
-    console.log("Disabling contentEditable...");
-    document.querySelector("#revieuwmaker #revieuwtitle").contentEditable = 'false';
-    document.querySelector("#revieuwmaker #revieuw").contentEditable = 'false';
+    document.querySelector("#reviewmaker #reviewtitle").contentEditable = 'false';
+    document.querySelector("#reviewmaker #review").contentEditable = 'false';
 
-    var sourceElement = document.getElementById("revieuwmaker");
+    var sourceElement = document.getElementById("reviewmaker");
     var clonedElement = sourceElement.cloneNode(true);
     clonedElement.id = "submitted";
-    var targetElement = document.getElementById('revieuws');
+    var targetElement = document.getElementById('reviews');
     targetElement.appendChild(clonedElement);
 
-    document.querySelector("#revieuwmaker #revieuwtitle").contentEditable = 'true';
-    document.querySelector("#revieuwmaker #revieuw").contentEditable = 'true';
+    document.querySelector("#reviewmaker #reviewtitle").contentEditable = 'true';
+    document.querySelector("#reviewmaker #review").contentEditable = 'true';
+    document.querySelector("#submitted #star1").pointer
 
 }
 function button1(){
