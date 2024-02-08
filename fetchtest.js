@@ -1,23 +1,34 @@
 import { supabase } from './supabase.js';
 
+async function fetchVoornaamDataFromCVTable1() {
   try {
-    let { data: CVTable1, error } = await supabase
-    .from('CVTable1')
-    .select('*')
+    const tableName = 'CVTable1';
+    const columnName = '*';
 
-  if (error) {
-    console.error('Error met data ophalen', error);
-  } else {
-    const dataContainer = document.getElementById('div1');
+    // Perform Supabase query to select the 'voornaam' column
+    const { data, error } = await supabase
+      .from(tableName)
+      .select(columnName);
 
-    dataContainer.innerHTML = '';
+    console.log('Supabase Response:', { data, error });
 
-    CVTable1.forEach(item => {
-      const listItem = document.createElement('div');
-      listItem.textContent = JSON.stringify(item);
-      dataContainer.appendChild(listItem);
-    });
+    if (error) {
+      throw error;
+    }
+
+    if (data && data.length > 0) {
+      // Extract and log the 'voornaam' values
+      const voornaamData = data.map(entry => entry[columnName]);
+      console.log('Opgehaalde voornaam data:', voornaamData);
+      return voornaamData;
+    } else {
+      console.log('No voornaam data found.');
+      return [];
+    }
+  } catch (error) {
+    console.error('Error fetching voornaam data:', error.message);
   }
-  } catch (err) {
-    console.error('An error occurred:', err);
-  }
+}
+
+// Call the function to fetch voornaam data
+fetchVoornaamDataFromCVTable1();

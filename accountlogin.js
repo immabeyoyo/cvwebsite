@@ -1,4 +1,5 @@
 import {supabase} from './supabase.js'
+
 // // Instructions:  https://github.com/supabase/supabase-js/blob/master/README.md
 // import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 // // Gebruik  public anon key van supabse:  Project Setgtings > API > Project API keys > anon public
