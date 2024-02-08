@@ -49,12 +49,4 @@
     width: 20%;
     height: 100% ;
     float: left;
-    padding: 0px;
-    border: 0px;
-    background-image: url('star.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    background-color: Transparent;
 }
