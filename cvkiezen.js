@@ -1,9 +1,9 @@
 let chosenCV = "";
 
-function kiesCV(cv) {
-  chosenCV = cv;
-  alert(cv + " is gekozen!");
-}
+document.getElementsByClassName("hoi").addEventListener("click")
+
+chosenCV = cv;
+alert(cv + " is gekozen!");
 
 document.getElementById("Kies1").addEventListener("click", function() {
   kiesCV("cv1");
