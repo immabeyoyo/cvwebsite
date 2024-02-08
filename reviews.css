@@ -1,16 +1,16 @@
-#reviews{
+#revieuws{
     margin-left: 20%;
     margin-right: 20%;
     width: 60%;
     margin-bottom: 10px;
 }
-#reviewmaker{
+#revieuwmaker{
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
     height: 200px;
 }
-#reviewtitle{
+#revieuwtitle{
     height: 20px;
     width: 40%;
     padding-top: 10px;
@@ -28,7 +28,7 @@
     border-radius: 20px;
     position: relative;
 }
-#review{
+#revieuw{
     width: 100%;
     height: 145px;
     border: solid black 1px;
@@ -49,4 +49,12 @@
     width: 20%;
     height: 100% ;
     float: left;
+    padding: 0px;
+    border: 0px;
+    background-image: url('star.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    background-color: Transparent;
 }
