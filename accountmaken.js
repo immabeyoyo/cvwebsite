@@ -60,7 +60,6 @@ async function signupSupabase(username, password) {
 document.getElementById("gaterug").addEventListener("click", terugnaarhome)
 
 function terugnaarhome() {
-    window.location.href = "home.html"
   }
 
   document.querySelector('#inloggen').addEventListener('click', naarInlogPagina);
