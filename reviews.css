@@ -42,6 +42,9 @@
     border-radius: 20px;
     width: 100px;
     margin-right: 20%;
+    background-color: #1a91f0;
+    color: white;
+    border-radius: 4px; 
 }
 #submitted{
     margin-left: 20%;
@@ -103,7 +106,7 @@ nav {
   .logo img {
     width: 250px;
     height: auto;
-    margin-right: 900px;
+    margin-right: 800px;
   }
   
   .nav-item {
@@ -189,4 +192,6 @@ nav {
     text-align: center;
     margin: 3px;
   }
-  
+  #filler{
+    margin-bottom: 100px;
+  }  
