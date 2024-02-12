@@ -1,40 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="nl">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initisal-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="homestyles.css">
-    <title>CV Maker</title>
-    <link rel="icon" type="image/x-icon" href="Logo.png">
-    <script type="module" src="homescript.js"></script>
-    
-  </head>
-  <body>
-    
+    <title>Navigatiebalk</title>
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="Logo.png" alt="Logo">
+    </div>
+
+    <div class="nav-item">
+        <a href="#cvcv">Cv</a>
+    </div>
+
+    <div class="nav-item">
+        <a href="#sollicitatiebrief">Sollicitatiebrief</a>
+    </div>
+
+    <div class="nav-item">
+        <a href="#cv">Cv maken</a>
+    </div>
+
+    <div class="nav-item">
+        <a href="#blog">Blog</a>
+    </div>
+
+    <div class="nav-item">
+        <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="right-buttons">
+        <a href="#login" class="login-button">Log in</a>
+        <a href="#signup" class="signup-button">Aanmelden</a>
+    </div>
+</nav>
+
+<div class="Templates">
     <div class="header">
-     <img src="Logo.png">
-      <p>Welkom bij CV maker. <br> Hier kan je je gegevens invullen en deze invullen in een gekozen cv layout. <br> Klik op de knop om verder te gaan.</p>
-    </div>
-    
-    <button id="next-page-button" onclick="nextpage()">Volgende Pagina</button> 
-    
-    <div class="inlog">
-      <p>Maak hier een account aan of log in <br>om je cv op te slaan</p>
-    <button id="accountmaken" >Account aanmaken</button>
-    <button id="inloggen" >Inloggen</button>
+        <h1>Succesvolle CV Templates</h1>
+        <p>Elke cv template is ontworpen door professionals en volgt de </p>
+           <p>ongeschreven regels waar werkgevers op letten. Val op en word sneller </p>
+          <p> aangenomen met onze bewezen effectieve cv templates.</p>
     </div>
 
-    <div id="advertentie">
-      Uw advertentie hier? <br> Dat kan! Neem nu contact op. <br> michiel.vanwijk@student.vonknh.nl
+    <div class="Center-button">
+        <a href="#MakeCV" class="Makecv-button">Create Cv</a>
     </div>
 
- 
+    
+    
+        <div class="category-buttons-container">
+            <div class="category-button-wrapper" id="All">
+                <a href="#All" class="category-button">
+                    <div class="category-content">
+                        <img src="All2.jpg.png" alt="All Image" class="category-image" height="35px" width="35px">
+                        <div class="category-text-wrapper">
+                            Alle
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-button-wrapper" id="Simpel">
+                <a href="#Simpel" class="category-button">
+                    <div class="category-content">
+                        <img src="Simple.jpg.svg" alt="Simpel Image" class="category-image">
+                        <div class="category-text-wrapper">
+                            Simpel
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-button-wrapper" id="Modern">
+                <a href="#Modern" class="category-button">
+                    <div class="category-content">
+                        <img src="Modern.jpg.svg" alt="Modern Image" class="category-image">
+                        <div class="category-text-wrapper">
+                            Modern
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-button-wrapper" id="Creatief">
+                <a href="#Creatief" class="category-button">
+                    <div class="category-content">
+                        <img src="Creative.jpg.svg" alt="Creative Image" class="category-image">
+                        <div class="category-text-wrapper">
+                            Creatief 
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-button-wrapper" id="Professioneel">
+                <a href="#Professioneel" class="category-button">
+                    <div class="category-content">
+                        <img src="professional.jpg.svg" alt="professional Image" class="category-image">
+                        <div class="category-text-wrapper">
+                            Professioneel
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     
 
-   <div>
-    <p>If logged in, click button below to log out:</p>
-    <button id="logout">log out</button>
-   </div>
+    <div class="line"></div>
+</div>
 
-  </body>
+</body>
 </html>
