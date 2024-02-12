@@ -203,3 +203,19 @@ nav {
   #filler{
     margin-bottom: 100px;
   }  
+
+  footer {
+    background-color: #102652;
+    padding: 0px;
+    color: white;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+  }
+  
+  footer img {
+    width: 70px;
+    height: auto;
+  }
