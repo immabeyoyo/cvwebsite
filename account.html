@@ -6,42 +6,37 @@
     <meta name="Keywords" content="CV, Maak CV, Solliciteren, Maker">
     <meta name ="Description" content="Met deze websiste kan je gemakkelijk een cv maken.">
     <link rel="stylesheet" href="accountstyles.css">
-    <title>CV-creatorr</title>
+    <title>CV-creator</title>
     <link rel="icon" type="image/x-icon" href="Logo.png">
+    <script type="module" src="accountscript.js"></script>
   </head>
   <body>
     <header>
     <div class="Logo">
       <img src="Logo.png">
     </div>
-    <div class="menu">
-      <div class="menuButton" onclick="toggleDropdown()">Menu</div>
-      <div class="menuContent" id="myMenu">
-        <a href="index.html">Home</a>
-        <a href="account.html">Account</a>
-      </div>
-    </div>
     </header>
     <div class = mijnAccount>Mijn account:</div>
     <div class = accountGegevens>
-      <div class = gegevens>
+      <div class = "gegevens">
         Mijn gegevens:
-      </div>
-      <div class = fotos>
-        Mijn geuploadde foto's:
+        <div id="naam"></div>
+        <div id = "geboortedatum"></div>
+        <div id = "email"></div>
+        <div id = "telefoon"></div>
+        <div id = "educatie"></div>
+        <div id = "ervaring"></div>
+        <div id = "hobbies"></div>
       </div>
       <div class = cv>
         Mijn gekozen cv:
         <button class = "veranderButton">Verander CV</button>
         <button class = "printButton">Print</button>
-
       </div>
     </div>
     <footer>
-      <a href = "Home.html"><img src ="Logo.png" alt = "Logo"></a>
-    <p>Copyright ©2024 CV Maker
-    </p>
+      <a href = "home.html"><img src ="Logo.png" alt = "Logo"></a>
+    <p>Copyright ©2024 CV Maker</p>
     </footer>
-    <script src="accountscript.js"></script>
   </body>
 </html>

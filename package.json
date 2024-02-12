@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "github:supabase/supabase-js"
+  },
+  "name": "cvwebsite",
+  "version": "1.0.0",
+  "main": "accountlogin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
