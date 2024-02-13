@@ -19,10 +19,6 @@ nav {
   margin-right: 900px;
 }
 
-.logo{
-  width: 500px;
-}
-
 .nav-item {
   margin-right: 20px;
 }
@@ -34,6 +30,10 @@ nav a {
   padding: 14px 16px;
   font-size: 18px;
   display: inline-block;
+}
+
+.logo{
+  width: 500px;
 }
 
 nav a:hover {
