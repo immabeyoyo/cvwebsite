@@ -116,6 +116,9 @@ nav {
     height: auto;
     margin-right: 800px;
   }
+  .logo{
+    width: 500px;
+  }
   
   .nav-item {
     margin-right: 20px;
