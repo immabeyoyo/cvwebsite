@@ -31,6 +31,10 @@ nav a {
   display: inline-block;
 }
 
+.logo{
+  width: 500px;
+}
+
 nav a:hover {
   background-color: #ddd;
   color: black;
