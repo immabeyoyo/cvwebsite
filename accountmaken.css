@@ -1,44 +1,59 @@
-body{
-    background-color: rgb(86, 155, 205);
-}
-
-#gaterug {
-    float: right;
-
-}
-
-.signup-container {
-    background-color: white;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    max-width: 30%;
-   display: flex;
-
-    border-radius: 20px;
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .signup-form {
     margin: auto;
-    box-shadow: 0px 0px 10px;
-    margin-top: 2.5%;
-    
-}
-
-.inloggen-txt {
-   margin-top: -100%;
-   margin-left: 37%;
-   font-family: "Barlow Condensed", sans-serif;
-   font-weight: 400;
-   font-style: normal;
-   font-size: 2rem;
-}
-
-.input {
- 
-}
-
-.signup-form {
-   margin-left: 100%;
-}
-
-.signup-button button {
-    
-   
-}
+    display: flex;
+    flex-direction: column;
+    background-color: #102652;
+    border-radius: 20px;
+    height: 400px;
+    width: 60%;
+    align-items: center;
+  }
+  
+  .signup-form h1 {
+    text-align: center;
+    background-color: rgb(56, 156, 189);
+    width: 100%;
+    color: white;
+  }
+  
+  .signup-form button {
+    max-width: 41%;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+  
+  .username2, .password2 {
+    max-width: 40%;
+    width: 100%;
+    height: auto;
+    margin: 1px;
+  }
+  
+  .username2 {
+    margin-top: 80px;
+  }
+  
+  footer {
+    background-color: #102652;
+    padding: 0px;
+    color: white;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+  }
+  
+  footer img {
+    width: 70px;
+    height: auto;
+  }
