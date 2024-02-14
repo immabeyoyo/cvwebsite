@@ -1,0 +1,5 @@
+Je kan een account aanmaken via home.html en dan klikken op account aanmaken. 
+Je kan ook direct naar Accountmaken.html gaan om een account te maken
+Als je account.html openent wordt je automatisch doorgestuurd naar inloggen als je nog niet ingelogd bent. 
+Als je dan ingelogd bent zie je gegevens uit de database.
+Deze gegevens zijn nog niet gekoppeld aan je specifieke account.
