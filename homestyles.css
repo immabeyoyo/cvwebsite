@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+  font-family: Arial, sans-serif; /* Lettertype toegevoegd */
+  margin: 0; /* Verwijder de 8px marge */
   padding: 0;
 }
 
@@ -9,14 +9,36 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px 20px;
+  background-color: white; /* achtergrondkleur toegevoegd voor betere zichtbaarheid */
+  font-family: Arial, sans-serif; /* Lettertype toegevoegd */
+  padding: 14px 16px;
+}
+
+.logo {
+  width: 20%; /* Verwijder vaste breedte */
+  margin-right: auto; /* Verwijder de vaste marge aan de rechterkant */
+  justify-content: flex-end; /* Blijf het logo aan de rechterkant uitlijnen */
 }
 
 .logo img {
-  width: 250px;
-  height: auto;
-  margin-right: 800px;
+  max-width: 100%; /* Zorg ervoor dat de afbeelding niet breder wordt dan de container */
+  height: auto; /* Behoud de verhoudingen van de afbeelding */
+  width: auto; /* Zorg ervoor dat de afbeelding zijn natuurlijke grootte behoudt */
+  max-height: 80px; /* Stel een maximale hoogte in voor het logo */
 }
+
+@media screen and (max-width: 768px) { /* Mediaquery voor schermen kleiner dan 768px */
+  .logo {
+      width: 30%; /* Pas de breedte van het logo aan voor kleinere schermen */
+  }
+}
+
+@media screen and (max-width: 480px) { /* Mediaquery voor schermen kleiner dan 480px */
+  .logo {
+      width: 40%; /* Pas de breedte van het logo verder aan voor nog kleinere schermen */
+  }
+}
+  
 
 .nav-item {
   margin-right: 20px;
@@ -27,12 +49,9 @@ nav a {
   text-align: center;
   text-decoration: none;
   padding: 14px 16px;
-  font-size: 18px;
+  font-size: 16px;
   display: inline-block;
-}
-
-.logo{
-  width: 500px;
+  font-family: Arial, sans-serif; /* Lettertype toegevoegd */
 }
 
 nav a:hover {
@@ -57,17 +76,15 @@ nav a:hover {
   border: none;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   padding: 12px 18px;
   display: inline-block;
-  flex-grow: 1; /* Hiermee krijgen de knoppen gelijke ruimte om te groeien of krimpen */
 }
 
 .right-buttons a.login-button {
   background-color: white;
   color: #1a91f0;
-  margin-right: 15px; /* Aanpassing naar margin-right voor consistentie */
 }
 
 .right-buttons a.signup-button {
@@ -80,8 +97,6 @@ nav a:hover {
   background-color: #ddd;
   color: black;
 }
-
-
 
 .content-section {
   text-align: center;
@@ -97,6 +112,7 @@ nav a:hover {
   margin-top: 60px;
   margin-bottom: 10px;
   text-align: center;
+  font-family: Arial, sans-serif; /* Lettertype toegevoegd */
 }
 
 .header p {
@@ -104,7 +120,9 @@ nav a:hover {
   color: #666;
   text-align: center;
   margin: 3px;
+  font-family: Arial, sans-serif; /* Lettertype toegevoegd */
 }
+
 
 .Center-button {
   text-align: center;
@@ -119,6 +137,7 @@ nav a:hover {
   color: white;
   border-radius: 4px;
   transition: background-color 0.3s;
+  font-family: Arial, sans-serif; /* Lettertype toegevoegd */
 }
 
 .Makecv-button:hover {
@@ -145,6 +164,7 @@ nav a:hover {
   border-radius: 4px;
   transition: background-color 0.3s;
   position: relative;
+  font-family: Arial, sans-serif; /* Lettertype toegevoegd */
 }
 
 .category-button::before {
@@ -213,7 +233,110 @@ nav a:hover {
   margin-top: 10px;
 }
 
-/* Stijlen voor de grijze balk */
+
+
+
+
+.cvs {
+display: flex;
+justify-content: space-between;
+width: 70%;
+height: auto;
+background-color: white;
+border-radius: 25px;
+margin: auto;
+margin-top: 20px;
+padding: 10px;
+}
+
+.cv1 img,
+.cv2 img,
+.cv3 img {
+width: 100%;
+height: auto;
+border: 8px solid #888; /* Definieer de rand met een donkerdere kleur */
+padding: 5px; /* Voeg wat ruimte toe tussen de afbeelding en de rand */
+box-sizing: border-box; /* Zorg ervoor dat de padding wordt meegenomen in de totale breedte van de afbeelding */
+}
+
+.cv1 img,
+.cv2 img,
+.cv3 img {
+width: 90%;
+height: 85%;
+}
+
+.button-wrapper {
+display: flex;
+align-items: center;
+margin-top: 10px;
+}
+
+.button-wrapper p {
+margin-left: 10px; /* Voeg ruimte toe tussen de knop en de tekst */
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+.accountGegevens {
+  flex-direction: column; 
+}
+}
+
+.Kies1,
+.Kies2,
+.Kies3 {
+cursor: pointer;
+}
+
+.hoi {
+background-color: #1a91f0;
+color: white;
+border: none;
+border-radius: 4px;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.hoi:hover {
+background-color: #0e5a9d;
+}
+
+.template-description {
+font-size: 14px; /* Stel de gewenste lettergrootte in */
+color: #666; /* Kies een gewenste tekstkleur */
+margin-top: 5px; /* Voeg eventuele gewenste marge toe */
+}
+
+
+.container2 {
+max-width: 1600px;
+margin: 20px auto; /* Veranderd van -10 naar 20 voor betere uitlijning */
+max-height: 1200px;
+margin-top: 4%;
+}
+
+.text-section2 {
+padding: 20px;
+margin-bottom: 3%;
+background-color:  #0d0d0d16;
+font-family: Arial, sans-serif;
+text-align: left;
+margin-left: 60%;
+width: 40%;
+}
+
+.image2 {
+float: left; /* Veranderd van right naar left */
+margin-left: 7%;
+margin-top: -50%;
+}
+
+
 .footer {
   background-color: #252525;
   display: flex;
@@ -222,7 +345,7 @@ nav a:hover {
   color: #fffdfd;
   font-family: Arial, sans-serif;
   padding-right: 200px;
-  margin-top: 30%;
+  margin-top: 20%;
 }
 
 .contact {
