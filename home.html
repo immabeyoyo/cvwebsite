@@ -1,40 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initisal-scale=1.0">
-    <link rel="stylesheet" href="homestyles.css">
-    <title>CV Maker</title>
-    <link rel="icon" type="image/x-icon" href="Logo.png">
-    <script type="module" src="homescript.js"></script>
-    
-  </head>
-  <body>
-    
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Keywords" content="CV, Maak CV, Solliciteren, Maker">
+        <meta name ="Description" content="Met deze websiste kan je gemakkelijk een cv maken.">
+        <link rel="stylesheet" href="homestyles.css">
+        <title>CV creator</title>
+        <link rel="icon" type="image/x-icon" href="Logo.png">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="Logo.png" alt="Logo">
+    </div>
+
+    <div class="nav-item">
+        <a href="home.html">Home</a>
+    </div>
+
+    <div class="nav-item">
+        <a href="#sollicitatiebrief">Sollicitatiebrief</a>
+    </div>
+
+    <div class="nav-item">
+        <a href="cvkiezen.html">Cv maken</a>
+    </div>
+
+    <div class="nav-item">
+        <a href="Reviews.html">Review</a>
+    </div>
+
+    <div class="nav-item">
+        <a href="account.html">Mijn account</a>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="right-buttons">
+        <a href="inloggen.html" class="login-button">Log in</a>
+        <a href="AccountMaken.html" class="signup-button">Aanmelden</a>
+    </div>
+</nav>
+
+<div class="Templates">
     <div class="header">
-     <img src="Logo.png">
-      <p>Welkom bij CV maker. <br> Hier kan je je gegevens invullen en deze invullen in een gekozen cv layout. <br> Klik op de knop om verder te gaan.</p>
-    </div>
-    
-    <button id="next-page-button" onclick="nextpage()">Volgende Pagina</button> 
-    
-    <div class="inlog">
-      <p>Maak hier een account aan of log in <br>om je cv op te slaan</p>
-    <button id="accountmaken" >Account aanmaken</button>
-    <button id="inloggen" >Inloggen</button>
+        <h1>Succesvolle CV Templates</h1>
+        <p>Elke cv template is ontworpen door professionals en volgt de </p>
+           <p>ongeschreven regels waar werkgevers op letten. Val op en word sneller </p>
+          <p> aangenomen met onze bewezen effectieve cv templates.</p>
     </div>
 
-    <div id="advertentie">
-      Uw advertentie hier? <br> Dat kan! Neem nu contact op. <br> michiel.vanwijk@student.vonknh.nl
+    <div class="Center-button">
+        <a href="#MakeCV" class="Makecv-button">Create Cv</a>
     </div>
 
- 
+    
+    
+        <div class="category-buttons-container">
+            <div class="category-button-wrapper" id="All">
+                <a href="#All" class="category-button">
+                    <div class="category-content">
+                        <img src="All2.jpg.png" alt="All Image" class="category-image" height="35px" width="35px">
+                        <div class="category-text-wrapper">
+                            Alle
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-button-wrapper" id="Simpel">
+                <a href="#Simpel" class="category-button">
+                    <div class="category-content">
+                        <img src="Simple.jpg.svg" alt="Simpel Image" class="category-image">
+                        <div class="category-text-wrapper">
+                            Simpel
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-button-wrapper" id="Modern">
+                <a href="#Modern" class="category-button">
+                    <div class="category-content">
+                        <img src="Modern.jpg.svg" alt="Modern Image" class="category-image">
+                        <div class="category-text-wrapper">
+                            Modern
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-button-wrapper" id="Creatief">
+                <a href="#Creatief" class="category-button">
+                    <div class="category-content">
+                        <img src="Creative.jpg.svg" alt="Creative Image" class="category-image">
+                        <div class="category-text-wrapper">
+                            Creatief 
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-button-wrapper" id="Professioneel">
+                <a href="#Professioneel" class="category-button">
+                    <div class="category-content">
+                        <img src="professional.jpg.svg" alt="professional Image" class="category-image">
+                        <div class="category-text-wrapper">
+                            Professioneel
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     
 
-   <div>
-    <p>If logged in, click button below to log out:</p>
-    <button id="logout">log out</button>
-   </div>
+    <div class="line"></div>
+</div>
 
-  </body>
+
+<div class="footer">
+  <div class="contact">
+      <div class="contact">
+          <h2 class="contact-heading">CONTACT</h2>
+          <address>
+              <p class="contact-address">
+                  <img src="Marker Icon.jpg" height="38" width="39">
+                  <span>Stationsstraat 44<br>Putten</span>
+              </p>
+              <p class="contact-phone">
+                  <img src="Telephone Icon.jpg" height="38" width="39">
+                  <span>Telefoon:<br>0031 (0) 3 41 23 03 60 </span>
+              </p>
+              <p class="contact-email">
+                  <img src="Mail Icon.jpg" height="38" width="39">
+                  <span>Mail ons op:<br>michielvanwijk@student.vonknh.nl</span>
+              </p>
+              <p class="contact-hours">
+                  <img src="Marker Icon.jpg" height="38" width="39">
+                  <span>Ma t/m vrij 8 - 17 uur<br> Za 9 - 16 uur</span>
+              </p>
+          </address>
+      </div>
+  </div>            
+  <div class="menu">
+      <h2>MENU</h2>
+      <ul>
+          <li>CV</li> <br><br>
+          <li>SOLLICITATIEBRIEF</li> <br><br>
+          <li>CV MAKEN</li> <br><br>
+          <li>ALGEMENE VOORWAARDEN</li> <br><br>
+          <li>PRIVACY EN COOKIES</li> <br><br>
+          <li>BLOG</li>
+          <li>FAQ</li>           
+      </ul>
+  </div>
+      <div class="newsletter-container">
+        <h2>NIEUWSBRIEF</h2><br><br>
+        <div class="search-bar">
+          <input type="text" placeholder="Email @example.com" id="search-input">
+          <button onclick="stuurEmail()">Verstuur</button>
+        </div>
+        <div class="follow-container">
+          <h2>VOLG ONS!</h2>
+      </div>
+
+</body>
 </html>
